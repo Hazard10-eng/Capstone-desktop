@@ -83,7 +83,7 @@ Example command:
 
 👤 **Emmanuel Ntihinyuka**
 
-- GitHub: [@ntimanu][(https://github.com/ntimanu)](https://github.com/Hazard10-eng)
+- GitHub:(https://github.com/Hazard10-eng)
 - Twitter:[@emmantihinyuka]https://twitter.com/AimeSebagabo
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jean-aime-sebagabo-279aa2207/)
 
