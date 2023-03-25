@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Mobile home</title>
+</head>
+<body>
+    <header class="navigation">
+      <nav class="nav-bar">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <!-- <a href="#"><img src="./image/mobile_menu 1.png" alt="mobile-menu" class="menu" id="menu"></a> -->
+        <a href="#"><img src="./image/logo mobile.svg" alt="mobile-logo" class="nav-branding"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+           <a class="nav-link"  href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"  class="nav-link">Program</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Join</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sponsor</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class=" nav-link campaign">CC Campaign</a>
+          </li>
+  </ul>
+  
+</nav>
+    </header>
+     <section class="first-page">
+        <img src="./image/theme.png" alt="theme" class="theme">
+        <div class="intro">
+            <p class="intro-details">A joyful celebration believing in the value of openness and sharing, creating a positive 
+                change with people from over 80 countries is taking place in October, in Korea.</p>
+        </div>
+        <h2 class="year">2015.10.15(THU) ~ 16(FRI)</h2>
+        <p class="location">@ National Museum of Karea, Art Center Nabi and more
+        </p>
+    </section>
+    <section class="program">
+        
+        <h2 class="program-title">Main Program</h2>
+        <img src="./image/title_underline.png" alt="" class="underline">
+    
+            <div class="container">
+            <div class="program-table">
+                <img src="./image/Lecture.png" alt="lecture" class="program-photo">
+                <h2 class="program-head">lecture</h2>
+                <p class="program-details">Listen to the speakers from various 
+                    countries about the messages of sharing and opening.</p>
+            </div>
+            <div class="program-table">
+                <img src="./image/CC.png" alt="" class="program-photo">
+                <h2 class="program-head">CC Exhibition</h2>
+                <p class="program-details">Appreciate various creations applying CC 
+                    license of artists, organized from Art Center Nabi</p>
+            </div>
+            <div class="program-table">
+                <img src="./image/Forum.png" alt="" class="program-photo">
+                <h2 class="program-head">CC Exhibition</h2>
+                <p class="program-details">Appreciate various creations applying CC 
+                    license of artists, organized from Art Center Nabi</p>
+            </div>
+            <div class="program-table">
+            <img src="./image/Workshop.png" alt="" class="program-photo">
+            <h2 class="program-head">CC Exhibition</h2>
+            <p class="program-details">Appreciate various creations applying CC 
+                license of artists, organized from Art Center Nabi</p>
+        </div>
+        <div class="program-table">
+        <img src="./image/Ignite.png" alt="" class="program-photo">
+        <h2 class="program-head">CC Exhibition</h2>
+        <p class="program-details">Appreciate various creations applying CC 
+            license of artists, organized from Art Center Nabi</p>
+    </div>
+    <button class="join">Join CC Global Summit 2015</button>
+    </section>
+<section class="speakers">
+        <h2 class="speakers-title">Featured Speakers</h2>
+        <img src="./image/title_underline.png" alt="Underline" class="underline">
+        <div class="speaker-container">
+            <div class="speaker">
+                <img src="./image/speaker_01 1.png" alt="speaker1" class="speaker-photo">
+                <div class="speaker-details">
+                <h2 class="speaker-name">Yochai Benkler</h2>
+                <p class="speaker-speech1">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
+                <p class="speaker-speech2">Benkler studies commons-based peer production, and published 
+                    his seminal book, The Wealth of Networks in 2006</p>
+                </div>
+            </div>
+            <div class="speaker">
+                <img src="./image/speaker_01 2.png" alt="speaker2" class="speaker-photo">
+                <div class="speaker-details">
+                <h2 class="speaker-name">SohYeong Noh</h2>
+                <p class="speaker-speech1"> Director of Art Centre Nabi and a board member of CC Korea</p>
+                <p class="speaker-speech2">As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary
+                     collaboration and understanding among science technology, humanities, and the arts.</p>
+                    </div>
+            </div>
+            <a href="#" class="more"><button onclick="showmore()" class="more">more
+              <img src="./image/arrow_down 1.png" alt="more" class="arrow-down">
+          </button></a>
+            <div class="show-more">
+            <div class="speaker">
+              <img src="./image/speaker_01 2.png" alt="speaker2" class="speaker-photo">
+              <div class="speaker-details">
+              <h2 class="speaker-name">SohYeong Noh</h2>
+              <p class="speaker-speech1"> Director of Art Centre Nabi and a board member of CC Korea</p>
+              <p class="speaker-speech2">As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary
+                   collaboration and understanding among science technology, humanities, and the arts.</p>
+                  </div>
+          </div>
+          </div>
+        </div>
+
+    </section>
+
+    <script>
+      const loadmore=document.querySelector('.more');
+      let currentItems=2;
+      more.addEventListener('click',(e)=>{
+        const elementList = [...document.querySelectorAll('.speaker-container .speaker')]
+        e.target.classList.add('showloader');
+
+        for(let i=currentItems; i<currentItems+2; i++){
+          setTimeout(function(){
+            e.target.classList.remove('showloader')
+            if(elementList[i]){
+              elementList[i].style.display='flex'
+            }
+
+          },3000)
+        }
+        currentItems+=2
+
+        if(currentItems>=elementList.length){
+          event.target.classList.add('loaded')
+        }
+      })
+    </script>
+</body>
+</html> 
