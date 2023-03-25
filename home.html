@@ -9,10 +9,38 @@
 </head>
 <body>
     <header class="navigation">
-        <img src="./image/mobile_menu 1.png" alt="mobile-menu" class="menu">
-        <img src="./image/logo mobile.svg" alt="mobile-logo" class="logo">
+      <nav class="nav-bar">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <!-- <a href="#"><img src="./image/mobile_menu 1.png" alt="mobile-menu" class="menu" id="menu"></a> -->
+        <a href="#"><img src="./image/logo mobile.svg" alt="mobile-logo" class="nav-branding"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+           <a class="nav-link"  href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#"  class="nav-link">Program</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Join</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sponsor</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class=" nav-link campaign">CC Campaign</a>
+          </li>
+  </ul>
+  
+</nav>
     </header>
-    <section class="first-page">
+     <section class="first-page">
         <img src="./image/theme.png" alt="theme" class="theme">
         <div class="intro">
             <p class="intro-details">A joyful celebration believing in the value of openness and sharing, creating a positive 
@@ -60,7 +88,7 @@
     </div>
     <button class="join">Join CC Global Summit 2015</button>
     </section>
-    <section class="speakers">
+<section class="speakers">
         <h2 class="speakers-title">Featured Speakers</h2>
         <img src="./image/title_underline.png" alt="Underline" class="underline">
         <div class="speaker-container">
@@ -82,12 +110,46 @@
                      collaboration and understanding among science technology, humanities, and the arts.</p>
                     </div>
             </div>
-            <button class="more">more
-                <img src="./image/arrow_down 1.png" alt="more" class="arrow-down">
-            </button>
+            <a href="#" class="more"><button onclick="showmore()" class="more">more
+              <img src="./image/arrow_down 1.png" alt="more" class="arrow-down">
+          </button></a>
+            <div class="show-more">
+            <div class="speaker">
+              <img src="./image/speaker_01 2.png" alt="speaker2" class="speaker-photo">
+              <div class="speaker-details">
+              <h2 class="speaker-name">SohYeong Noh</h2>
+              <p class="speaker-speech1"> Director of Art Centre Nabi and a board member of CC Korea</p>
+              <p class="speaker-speech2">As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary
+                   collaboration and understanding among science technology, humanities, and the arts.</p>
+                  </div>
+          </div>
+          </div>
         </div>
 
     </section>
 
+    <script>
+      const loadmore=document.querySelector('.more');
+      let currentItems=2;
+      more.addEventListener('click',(e)=>{
+        const elementList = [...document.querySelectorAll('.speaker-container .speaker')]
+        e.target.classList.add('showloader');
+
+        for(let i=currentItems; i<currentItems+2; i++){
+          setTimeout(function(){
+            e.target.classList.remove('showloader')
+            if(elementList[i]){
+              elementList[i].style.display='flex'
+            }
+
+          },3000)
+        }
+        currentItems+=2
+
+        if(currentItems>=elementList.length){
+          event.target.classList.add('loaded')
+        }
+      })
+    </script>
 </body>
-</html>
+</html> 
