@@ -35,7 +35,7 @@ Boostrap 5
 
 ## 🚀 Live Demo
 
-- [Live Demo](https://ntimanu.github.io/capstone-project/)
+- [Live Demo]https://hazard10-eng.github.io/Capstone-desktop/
 - [Video presentation](https://www.loom.com/share/03ecae378dc94fab92634577b7f68af9)
 
 ## 💻 Getting Started
