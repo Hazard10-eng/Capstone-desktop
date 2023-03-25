@@ -53,7 +53,7 @@ Example commands:
 
 ```sh
   cd capstone-project
-  git clone https://github.com/ntimanu/capstone-project
+  git clone https://github.com/Hazard10-eng/Capstone-desktop
 ```
 
 ### Install
