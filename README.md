@@ -83,9 +83,9 @@ Example command:
 
 👤 **Emmanuel Ntihinyuka**
 
-- GitHub: [@ntimanu](https://github.com/ntimanu)
-- Twitter:[@emmantihinyuka](https://twitter.com/emmantihinyuka)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ntihinyuka-emmanuel-511890104/)
+- GitHub: [@ntimanu][(https://github.com/ntimanu)](https://github.com/Hazard10-eng)
+- Twitter:[@emmantihinyuka]https://twitter.com/AimeSebagabo
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jean-aime-sebagabo-279aa2207/)
 
 ## 🔭 Future Features
 
