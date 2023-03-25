@@ -3,26 +3,23 @@
   
 
 * {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-   
+  box-sizing: border-box; 
 }
 body {
-  height: 100vh;
-  display: grid;
-  place-items: center;
- 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; 
 }
-.navigation {
+/* .navigation {
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 gap:69px;
 width: 100%; 
  height: 63px;
-left: calc(50% - 375px/2);top: calc(50% - 63px/2 - 792.5px);
+left: calc(50% - 375px/2);
+top: calc(50% - 63px/2 - 792.5px);
 background: #FFFFFF;
 box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -57,7 +54,7 @@ display: flex;
 flex-direction: row;
 margin-top:79.8px;
 gap: 10px;
-/* width: 375px; */
+/* width: 375px; 
 height: 164px;
 background: #FFFFFFFF;
 }
@@ -246,5 +243,289 @@ display: flex;
 align-items: center;
 letter-spacing: -0.01em;
 color: #3B3E45;
-}
+} */
 
+@media screen and (min-width:768px){
+  .mobile-nav {
+    display:none;
+  }
+  li {
+    list-style: none;
+  }
+  .navigation{
+    margin-top:1.2%;
+  }
+  .topper {
+  display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px 190px 0px 0px;
+gap: 20px;
+width: 1440px;
+height: 30px;
+background: #3E3E3E;
+}
+.top {
+ padding-top:6px;
+ gap:20px;
+ justify-content: space-between;
+ display: flex;
+ flex-direction: row;
+ 
+}
+.nav-top {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 198px 0px 20px;
+gap: 232px;
+width: 1440px;
+height: 75px;
+background: #FFFFFF;
+align-self: stretch;
+}
+  
+.logo {
+    padding-left:20px;
+ }
+  
+  .nav-bar {
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+color: #868686;
+gap:62px;
+  }
+
+  .campaign {
+    box-sizing: border-box;
+    width: 123px;
+    height: 48px;
+    border: 5px solid #EC4327;
+    padding-top:13.5px;
+    padding-bottom:13.5px;
+
+    }
+    .first-page {
+      background-image:url('./image/about-hero-img-desktop.svg');
+      background-repeat:no-repeat;
+      background-size: calc(98%);
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 109px 251px;
+    gap: 10px;
+    width: 1440px;
+    height: 723px;
+    }
+    
+    .about-intro{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 35px 65px;
+      gap: 10px;
+      width: 923px;
+      height: 245px;
+      
+      background: #FFFFFF;
+    }
+    .about-details{
+      width: 793px;
+      height: 175px;
+      font-family: 'Lato',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+    }
+    .about-contact {
+    width: 641px;
+    height: 18px;
+    left: 141px;
+    top: 444.21px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #7A7A7A;
+    }
+    .about-email {
+      display: flex;
+      gap:10px;
+    width: 229px;
+    height: 14px;
+    left: 304px;
+    top: 475.21px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: #5F5F5F;
+    }
+    .logo-info {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 341px;
+    gap: 10px;
+    width: 1441px;
+    height: 491.28px;
+    background: #FFFFFF;
+    border-bottom: 2px solid #E0E2E7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .logo-title {
+      width: 572px;
+    height: 28px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    color: #2C2C2C;
+    }
+    .logo-details{
+    width: 759px;
+    height: 63px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    
+    color: #838383;
+    }
+    .about-logo { 
+    width: 542px;
+    height: 195.28px;
+    }
+    .summit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 341px;
+    gap: 35px;
+    width: 1441px;
+    height: 508px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #FAFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .summit-title {
+    width: 401px;
+    height: 28px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+    color: #2C2C2C;
+    }
+    .summit-details {
+    width: 634px;
+    height: 21px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #838383;
+    margin:0;
+    }
+    .summit-photo{
+      display:flex;
+      flex-direction:row;
+      gap:25px
+    }
+    .summit-2011, .summit-2013 {
+      width: 432px;
+    height: 236px;
+    }
+    .partners {
+      display: none;
+    }
+    .footer {
+     display:flex; 
+    width: 1440px;
+    height: 245px;
+    background: #2E2E2E;
+    justify-content: center;
+    padding-top:74px;
+    gap:65px;
+    }
+    .footer-logo{
+      padding-top:18px;
+    }
+    .footer-photo {
+      width: 325px;
+    height: 61px;
+    }
+    .time {
+      width: 338px;
+    height: 17px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    }
+    .footer-details {
+    width: 683px;
+    height: 56px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    }
+  
+}
